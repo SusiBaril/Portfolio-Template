@@ -15,12 +15,6 @@ The project was built using basic front-end technologies to practice core web de
 
 ---
 
-## Preview
-
-![Portfolio Screenshot](link-to-your-image.png)  
-
----
-
 ## Features
 
 - Fully responsive layout  
