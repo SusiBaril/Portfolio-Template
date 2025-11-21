@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+
     <title>Portfolio</title>
 </head>
 
@@ -14,59 +19,115 @@
 
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="border">
-            <div>
-                <a href="#home" class="logo"><i class="fa-solid fa-meteor"></i>MyPortfolio</a>
-            </div>
-            <div class="nav-links">
-                <div class="nav-tabs">
-                    <a href="#about">About Me</a>
-                </div>
-                <div class="nav-tabs">
-                    <a href="#projects">Projects</a>
-                </div>
-                <div class="nav-tabs">
-                    <a href="#certificate">Certicate</a>
-                </div>
-                <div class="nav-tabs">
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- About Me Section -->
     <section id="home">
-        <div class="section-content">
-            <h1>Home</h1>
+        <div class="home-content">
+            <div class="left">
+                <h1>Welcome to My Portfolio</h1>
+                <p>This is a brief introduction about myself and what I do.</p>
+                <p><i class="fa-solid fa-location-dot"></i>Philippines</p>
+                <div class="icons">
+                    <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" onclick="email()"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#" onclick="phone()"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="assets/profile-image.png" alt="Profile Picture">
+            </div>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about">
-        <div class="section-content">
-            <h1>About Me</h1>
-        </div>
+    <section id="skills">
+        <div class="skills-content">
+            <h1 class="skill-title">Skills</h1>
+
+            <div class="skill-icon">
+                <div class="skill-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h1>HTML</h1>
+                    <p class="description">Structure content for web pages</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h1>CSS</h1>
+                    <p class="description">Style websites with beautiful layouts</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h1>JAVASCRIPT</h1>
+                    <p class="description">Adds interactivity to web pages</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <h1>BOOTSTRAP</h1>
+                    <p class="description">Responsive front-end component framework</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-tailwindcss-plain colored"></i>
+                    <h1>TAILWIND</h1>
+                    <p class="description">Utility-first CSS framework styling</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-php-plain colored"></i>
+                    <h1>PHP</h1>
+                    <p class="description">Server-side scripting for websites</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-react-original colored"></i>
+                    <h1>REACT.JS</h1>
+                    <p class="description">Build interactive user interface components</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-laravel-plain colored"></i>
+                    <h1>LARAVEL</h1>
+                    <p class="description">PHP framework for web applications</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <h1>MYSQL</h1>
+                    <p class="description">Relational database management system</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-github-original colored"></i>
+                    <h1>GITHUB</h1>
+                    <p class="description">Collaborate and manage code repositories</p>
+                </div>
+            </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="section-content">
+        <div class="projects-content">
             <h1>Projects</h1>
-        </div>
-    </section>
-
-    <section id="certificate">
-        <div class="section-content">
-            <h1>Certificate</h1>
+            <p>Here are some of the projects I have worked on.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="section-content">
-            <h1>Contact</h1>
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p>If you'd like to get in touch, please reach out via email or social media.</p>
         </div>
     </section>
 
