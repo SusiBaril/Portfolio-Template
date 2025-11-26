@@ -147,8 +147,52 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="contact-content">
-            <h1>Contact Me</h1>
-            <p>If you'd like to get in touch, please reach out via email or social media.</p>
+            <div class="content-title">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="card-contact">
+                <div class="contact-form">
+                    <form action="">
+                        <div class="contact-tiltle">
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input id="email" placeholder="Enter Email" type="email" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="subject">Subject</label>
+                                <input id="subject" placeholder="Enter Subject" type="text" required>
+                            </div>
+                        </div>
+                        <div class="contact-message">
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Enter your Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="other-contact">
+                    <div class="address">
+                        <h2>Address</h2>
+                        <i class="fa-solid fa-location-dot">
+                            <p>Philippines</p>
+                        </i>
+                    </div>
+                    <div class="social">
+                        <h2>Social Links</h2>
+                        <div class="icons" style="text-decoration: none;">
+                            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" onclick="email()"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#" onclick="phone()"><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
